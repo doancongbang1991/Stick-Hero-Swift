@@ -468,9 +468,9 @@ private extension StickHeroGameScene {
         node.zPosition = StickHeroGameSceneZposition.gameOverZposition.rawValue
         addChild(node)
         
-        let label = SKLabelNode(fontNamed: "HelveticaNeue-Bold")
+        let label = SKLabelNode(fontNamed: "AmericanTypewriter-Bold")
         label.text = "Game Over"
-        label.fontColor = SKColor.red
+        label.fontColor = SKColor.white
         label.fontSize = 150
         label.position = CGPoint(x: 0, y: 100)
         label.horizontalAlignmentMode = .center
@@ -481,10 +481,10 @@ private extension StickHeroGameScene {
         retry.position = CGPoint(x: 0, y: -200)
         node.addChild(retry)
         
-        let highScore = SKLabelNode(fontNamed: "AmericanTypewriter")
+        let highScore = SKLabelNode(fontNamed: "AmericanTypewriter-Bold")
         highScore.text = "Highscore!"
         highScore.fontColor = UIColor.white
-        highScore.fontSize = 50
+        highScore.fontSize = 70
         highScore.name = StickHeroGameSceneChildName.HighScoreName.rawValue
         highScore.position = CGPoint(x: 0, y: 300)
         highScore.horizontalAlignmentMode = .center
